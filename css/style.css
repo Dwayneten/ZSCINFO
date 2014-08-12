@@ -1,0 +1,83 @@
+#nav > li > a, .link {
+    color: #415166;
+    text-decoration: none;
+    font-family: proxima_nova_rgregular,"microsoft yahei","lucida grande",tahoma,verdana,arial,sans-serif;
+}
+#nav > li > a:hover{
+    color: #408CF3;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #408CF3;
+}
+#nav > .current > a {
+    color: #408CF3;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #408CF3;
+}
+.title {
+    margin: 0;
+    padding-top: 20%;
+    color: #3D444C;
+    line-height: 1.8em;
+    font-family: ralewaythin,'microsoft yahei';
+    font-size: .64em;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+.mark {
+    color: #4688EB;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(top,#68bcfd,#4084e9);
+}
+.small {
+    font-size: .4em;
+    line-height: .6em;
+}
+#maptitle {
+    margin: 0;
+    padding-top: 5%;
+    line-height: 1em;
+    font-family: ralewaythin,'microsoft yahei';
+    font-size: .64em;
+    display: inline-block;
+}
+.whitetext {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px rgba(0,0,0,.3);
+}
+.fullphoto-text {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 0;
+    z-index: 1;
+}
+p {
+    margin: 0;
+    line-height: 1.4em;
+    font-size: .22em;
+    color: #666;
+    color: rgba(0,0,0,.6);
+    font-family: proxima_nova_rgregular,'microsoft yahei';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.whitep {
+    padding-top: 15px;
+    margin: 0;
+    line-height: 1.4em;
+    font-size: .22em;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,.9);
+    font-family: proxima_nova_rgregular,'microsoft yahei';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.link:hover {
+    color: #408CF3;
+}

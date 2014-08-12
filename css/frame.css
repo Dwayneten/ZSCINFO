@@ -1,0 +1,100 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #09f;
+}
+a:hover {
+    text-decoration: none;
+}
+#nav {
+    background-color: rgba(255,255,255,.9);
+    clear: both;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 65535;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+}
+#nav > h1 {
+    background-image: url(../images/LOGO.gif);
+    position: absolute;
+    font-size: 1.2em;
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: 0 20px;
+    overflow: hidden;
+}
+#nav > li {
+    display: inline-block;
+    width: 5%;
+}
+.container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    font-weight: 400;
+    font-size: 625%;
+    text-align: center;
+}
+.container > .odd {
+    background-color: #fff;
+}
+.container > .even {
+    background-color: #e5e7e9;
+}
+.container > .section {
+    display: block;
+    height: 100%;
+}
+section {
+    min-height: 100%;
+    position:relative;
+}
+#baidumap {
+    margin: 5px auto 0 auto;
+    display: inline-block;
+    border: 10px solid #fff;
+    box-shadow: 0 0px 10px rgba(0,0,0,.3);
+}
+.leftbox {
+    margin: 0;
+    padding: 0;
+    width: 48%;
+    float: left;
+    min-height: 100%;
+}
+.rightbox {
+    margin: 0;
+    padding: 0;
+    width: 48%;
+    float: left;
+    min-height: 100%;
+}
+.leftbox img, .rightbox img {
+    margin: 0;
+    padding: 8% 0 0 0;
+    max-height: 90%;
+}
+.fullphoto {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    z-index: 0;
+}

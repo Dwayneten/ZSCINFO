@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>ZSCINFO | HOME</title> 
+    <meta name="description" content="Infomation of Zhongshan Institute"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Styles
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <link rel="stylesheet" type="text/css" href="../css/frame.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <script type='text/javascript' src='../scripts/jquery.1.7.1.min.js'></script> 
+    <script type='text/javascript' src="../scripts/jquery.scrollTo.js"></script>
+    <script type='text/javascript' src="../scripts/jquery.nav.js"></script>
+
+    <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+    <ul id="nav">
+        <h1>吗的LOGO大小适应弄不好 不要了</h1>
+        <li class="current"><a href="#section-1">引言</a></li>
+        <li><a href="#section-2">地理环境</a></li>
+        <li><a href="#section-3">宿舍概况</a></li>
+        <li><a href="#section-4">你若军训</a></li>
+        <li><a href="#section-5">准备物品</a></li>
+        <li><a href="#section-6">新生报到</a></li>
+        <li><a href="#section-7">BARA</a></li>
+        <li><a href="#section-8">BARA</a></li>
+        <li><a href="#section-last">学校实景</a></li>
+    </ul>
+
+
+    <div class="container">
+        <section class = "odd" id="section-1">
+            <h3 class="title">
+                <span class="mark">中山学院</span><span>新生向导</span><span class="small">(*非官方)</span>
+            </h3>
+            <p>
+                被中山学院录取了，对大学充满好奇，想更加了解TA？<br>
+                我们在这里提供信息及资料——<br>
+                准确严谨，我们不提供过时信息亦不会肯定未经确认的消息<br>
+                图文并茂，让你身临其境般感受大学气氛
+            </p>
+        </section>
+        <section class = "even" id="section-2">
+            <h3 id="maptitle">
+                <span class="whitetext">地理环境</span>
+            </h3>
+            <p>
+                中山气候特征为光热充足、雨量充沛、干湿分明<br>
+                夏天较炎热，冬天不会很冷<br>
+                学校位于中山市石岐区，所以娱乐逛街都很方便，到邻近城市亦很快捷<br>
+            </p>
+            <!--百度地图容器-->
+            <div id = "baidumap">
+                <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+            </div>
+        </section>
+        <section class = "odd" id="section-3">
+            <div class = "leftbox">
+                <h3 class="title">
+                <span class="mark">宿舍</span><span>概况</span>
+                </h3>
+                <p>
+                    现在关于新生的宿舍到底是四人间还是六人间众说纷纭，<br>
+                    其实官方并未公布最终的决定，<br>
+                    换言说仍未有新生宿舍的确切消息，<strong>以下为推测</strong><br>
+                    新生宿舍极有可能是四人间，理由有:<br>
+                    1.校方已拍卖了不少上下铺床架<br>
+                    2.学校在建的香山片区即将交付使用<br>
+                    3.所收取的住宿费(1700)为四人间的费用<br>
+                    <br>
+                    先抛开四人间六人间的问题不说，让我们来看看宿舍配置吧~<br>
+                    以四人间为例，宿舍大概的平面图如右图→_→<br>
+                    宿舍配有饮水机、空调、风扇、若干壁柜，独立卫浴。
+                </p>
+            </div>
+            <div class = "rightbox">
+                <img src="../images/pingmian.jpg">
+            </div>
+        </section>
+        <section class = "even" id="section-4">
+            <div class = "fullphoto-text">
+            <h3 id="maptitle">
+                <span class="whitetext">你若军训 便是晴天</span>
+            </h3>
+            <p class="whitep">
+                新生于8月14日至8月27日军训<br>
+                <strong>以下介绍基于往届的情况</strong><br>
+                上午和下午都要训练，晚上活动视情况而定<br>
+                活动可能为看电影、听讲座、拉歌等<br>
+                在临近军训期尾声的时候晚上也有可能要训练<br>
+                军训时有特殊方阵如军体拳、防暴队等参加<br>
+                <br>
+                报到时就要根据自己的size领取军装:<br>
+                军帽、长短袖军衣各一件、军裤一件、军鞋一对<br>
+                还有手套、腰带等<br>
+                如果怕鞋子硬可以去买个鞋垫<br>
+                买防晒霜的话推荐买SPF30-40，PA两个或三个+的<br>
+                <br>
+                图片待更换<br>
+            </p>
+            </div>
+            <img class = "fullphoto" src = "../images/junxun.jpg">
+        </section>
+        <section class = "odd" id="section-5">
+            <div class = "leftbox">
+                <h3 class="title">
+                <span>准备</span><span class="mark">物品</span>
+                </h3>
+                <p>
+                    <br>
+                    初来乍到，要准备什么东西呢？<br>
+                    首先BALALBALBALBLABLABLABLA<br>
+                    babababararabarabara<br>
+                    <br>
+                    bararabarabara<br>
+                    barababararabarabara<br>
+                    barabara<br>
+                </p>
+            </div>
+            <div class = "rightbox">
+                <img src="../images/pingmian.jpg">
+            </div>
+        </section>
+        <section class = "even" id="section-6">
+            <div class = "leftbox">
+                <img src="../images/pingmian.jpg">
+            </div>
+            <div class = "rightbox">
+                <h3 class="title">
+                <span>新生</span><span class="mark">报到</span>
+                </h3>
+                <p>
+                    <br>
+                    新生报到，要经过什么流程呢？<br>
+                    首先BALALBALBALBLABLABLABLA<br>
+                    babababararabarabara<br>
+                    <br>
+                    bararabarabara<br>
+                    barababararabarabara<br>
+                    barabara<br>
+                </p>                
+            </div>
+        </section>
+        <section class = "odd" id="section-7">
+        </section> 
+        <section class = "even" id="section-8">
+        </section> 
+        <section class = "odd" id="section-last">
+            <h3 class="title">
+                <span>想查看</span><span class="mark">学校实景</span><span>?</span><span class="small">（未完工）<span>
+            </h3>
+            <a class="link" href="picture.htm">戳我<a>
+        </section>  
+    </div><!-- container -->
+    <script type="text/javascript">$(document).ready(function() {$('#nav').onePageNav();});</script>
+</body>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+        addPolyline();//向地图中添加线
+        addRemark();//向地图中添加文字标注
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.396356,22.533892);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"南门",content:"报道可从此门入",point:"113.395485|22.530062",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"北门",content:"邻近龙腾宿舍区&nbsp;附近商铺较多",point:"113.399276|22.536688",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"东门",content:"邻近龙腾与香山宿舍区&nbsp;附近有一些商铺",point:"113.400524|22.534401",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"岐头门",content:"邻近岐头宿舍区",point:"113.395799|22.536821",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"西门（大概位置）",content:"很小的一个门",point:"113.392727|22.531989",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"山顶足球场&篮球场",content:"山顶足球场和山顶篮球场",point:"113.396958|22.535303",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+//标注线数组
+    var plPoints = [{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["113.396904|22.536671","113.396635|22.537189"]}
+         ];
+    //向地图中添加线函数
+    function addPolyline(){
+        for(var i=0;i<plPoints.length;i++){
+            var json = plPoints[i];
+            var points = [];
+            for(var j=0;j<json.points.length;j++){
+                var p1 = json.points[j].split("|")[0];
+                var p2 = json.points[j].split("|")[1];
+                points.push(new BMap.Point(p1,p2));
+            }
+            var line = new BMap.Polyline(points,{strokeStyle:json.style,strokeWeight:json.weight,strokeColor:json.color,strokeOpacity:json.opacity});
+            map.addOverlay(line);
+        }
+    }
+//文字标注数组
+    var lbPoints = [{point:"113.393661|22.533208",content:"山底足球场"}
+         ,{point:"113.394416|22.534126",content:"体育馆&游泳池"}
+         ,{point:"113.398279|22.536145",content:"龙腾片区"}
+         ,{point:"113.398638|22.534543",content:"香山片区"}
+         ,{point:"113.397686|22.533608",content:"教学楼"}
+         ,{point:"113.398023|22.532131",content:"实验楼"}
+         ,{point:"113.396118|22.531297",content:"行政楼"}
+         ,{point:"113.395516|22.532907",content:"凤翔片区"}
+         ,{point:"113.396235|22.537823",content:"岐头片区"}
+         ,{point:"113.395377|22.530829",content:"1号教学楼（报到处）"}
+         ];
+    //向地图中添加文字标注函数
+    function addRemark(){
+        for(var i=0;i<lbPoints.length;i++){
+            var json = lbPoints[i];
+            var p1 = json.point.split("|")[0];
+            var p2 = json.point.split("|")[1];
+            var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+            map.addOverlay(label);
+            label.setStyle({borderColor:"#999"});
+        }
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</html>

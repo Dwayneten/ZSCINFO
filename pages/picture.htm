@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>ZSCINFO | Picture</title> 
+    <meta name="description" content="Pictures of Zhongshan Institute"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Styles
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <link rel='stylesheet' id='camera-css'  href='../css/camera.css' type='text/css' media='all'>
+    <link rel="stylesheet" type="text/css" href="../css/frame.css">
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            font-size: 1.5em;
+            color: #415166;
+            text-decoration: none;
+            font-family: proxima_nova_rgregular,"microsoft yahei","lucida grande",tahoma,verdana,arial,sans-serif;
+        }
+        a:hover {
+            color: #408CF3;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #408CF3;
+        }
+        #back_to_camera {
+            background: rgba(255,255,255,.8);
+            clear: both;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .fluid_container {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+        #camera_wrap_4 {
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin-bottom: 0!important;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        .camera_bar {
+            z-index: 2;
+        }
+        .camera_thumbs {
+            margin-top: -100px;
+            position: relative;
+            z-index: 1;
+        }
+        .camera_thumbs_cont {
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+        .camera_overlayer {
+            opacity: .1;
+        }
+    </style>
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    
+    <script type='text/javascript' src='../scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='../scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='../scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='../scripts/camera.min.js'></script> 
+    
+    <script>
+        jQuery(function(){
+            
+            jQuery('#camera_wrap_4').camera({
+                height: 'auto',
+                loader: 'bar',
+                pagination: false,
+                thumbnails: true,
+                hover: false,
+                opacityOnGrid: false,
+                imagePath: '../images/'
+            });
+
+        });
+    </script>
+ 
+</head>
+<body>
+    <div id="back_to_camera">
+        <div class="nav_button"><a href="../pages/home.htm">返回新生向导</a></div>
+    </div><!-- #back_to_camera -->
+
+    <div class="fluid_container camera_blue_skin">
+        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+            <div data-thumb="../images/slides/thumbs/bridge.jpg" data-src="../images/slides/bridge.jpg">
+            </div>
+            <div data-thumb="../images/slides/thumbs/leaf.jpg" data-src="../images/slides/leaf.jpg">
+            </div>
+            <div data-thumb="../images/slides/thumbs/road.jpg" data-src="../images/slides/road.jpg">
+            </div>
+            <div data-thumb="../images/slides/thumbs/sea.jpg" data-src="../images/slides/sea.jpg">
+            </div>
+            <div data-thumb="../images/slides/thumbs/shelter.jpg" data-src="../images/slides/shelter.jpg">
+            </div>
+            <div data-thumb="../images/slides/thumbs/tree.jpg" data-src="../images/slides/tree.jpg">
+            </div>
+        </div><!-- #camera_wrap_4 -->
+    </div><!-- .fluid_container -->
+    
+</body>
+</html>
