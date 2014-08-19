@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>ZSCINFO | HOME</title> 
+    <meta name="description" content="Infomation of Zhongshan Institute"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Styles
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <link rel="stylesheet" type="text/css" href="css/frame.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //      Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <script type='text/javascript' src='scripts/jquery.1.7.1.min.js'></script> 
+    <script type='text/javascript' src="scripts/jquery.scrollTo.js"></script>
+    <script type='text/javascript' src="scripts/jquery.nav.js"></script>
+
+    <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+    <!--13软A凌嘉威 2014.08.19@Dwayne--> 
+    <ul id="nav">
+        <li class="current"><a href="#section-1">引言</a></li>
+        <li><a href="#section-2">地理环境</a></li>
+        <li><a href="#section-3">宿舍概况</a></li>
+        <li><a href="#section-4">你若军训</a></li>
+        <li><a href="#section-5">准备物品</a></li>
+        <li><a href="#section-6">新生报到</a></li>
+        <li><a href="#section-7">Q&A-1</a></li>
+        <li><a href="#section-8">Q&A-2</a></li>
+        <li><a href="#section-last">校园实景</a></li>
+    </ul>
+
+    <div class="container">
+        <section class = "odd" id="section-1">
+            <h3 class="title">
+                <span class="mark">中山学院</span><span>新生向导</span><span class="small">(*非官方)</span>
+            </h3>
+            <p>
+                <span class = "small">
+                请于电脑端使用IE10+/Chrome/Firefox等现代浏览器访问本页面
+                </span><br>
+                学校官方新生入学报到指南<strong><a class = "link" href="http://zsb.zsc.edu.cn/contact/notice">点此进入</a></strong><br>
+            </p>
+        </section>
+
+        <section class = "even" id="section-2">
+            <h3 id="maptitle">
+                <span class="whitetext">地理环境</span>
+            </h3>
+            <p>
+                中山气候特征为光热充足、雨量充沛、干湿分明<br>
+                夏天较炎热，冬天不会很冷<br>
+                学校位于中山市石岐区，所以娱乐逛街都很方便，到邻近城市亦很快捷<br>
+            </p>
+            <!--百度地图容器-->
+            <div id = "baidumap">
+                <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+            </div>
+        </section>
+
+        <section class = "odd" id="section-3">
+            <div class = "leftbox">
+                <h3 class="title">
+                <span class="mark">宿舍</span><span>概况</span>
+                </h3>
+                <p>
+                    现在关于新生的宿舍到底是四人间还是六人间众说纷纭，<br>
+                    其实官方并未公布最终的决定，<br>
+                    换言说仍未有新生宿舍的确切消息，<strong>以下为推测</strong><br>
+                    新生宿舍极有可能是四人间，理由有:<br>
+                    1.校方已拍卖了不少上下铺床架<br>
+                    2.学校在建的香山片区即将交付使用<br>
+                    3.所收取的住宿费(1700)为四人间的费用<br>
+                    <br>
+                    先抛开四人间六人间的问题不说，让我们来看看宿舍配置吧~<br>
+                    以学校原有的四人间为例，宿舍大概的平面图如右图→_→<br>
+                    宿舍配有饮水机、空调、风扇、若干壁柜，独立卫浴。<br>
+                    床铺大小：长1.9米，宽0.9米
+                </p>
+            </div>
+            <div class = "rightbox">
+                <img src="images/pingmian.jpg">
+            </div>
+        </section>
+
+        <section class = "even" id="section-4">
+            <div class = "fullphoto-text">
+                <div class = "leftbox">
+                    <h3 class = "left-bottom">
+                        <span class="whitetext">你若军训 便是晴天</span>
+                    </h3>
+                </div>
+                <div class = "rightbox" id="right">
+                    <p class="whitep">
+                    新生于8月14日至8月27日军训<br>
+                    <strong>以下介绍基于往届的情况</strong><br>
+                    上午和下午都要训练，晚上活动视情况而定<br>
+                    活动可能为看电影、听讲座、拉歌等<br>
+                    在临近军训期尾声的时候晚上也有可能要训练<br>
+                    军训时有特殊方阵如军体拳、防暴队等参加<br>
+                    <br>
+                    报到时就要根据自己的size领取军装:<br>
+                    军帽、长短袖军衣各一件、军裤一件、军鞋一对<br>
+                    还有手套、腰带等<br>
+                    如果怕鞋子硬可以去买个鞋垫<br>
+                    买防晒霜的话推荐买SPF30-40，PA两个或三个+的<br>
+                    背景图via:王斐
+                    </p>
+                </div>
+            </div>
+            <img class = "fullphoto" src = "images/junxun.jpg">
+        </section>
+
+        <section class = "odd" id="section-5">
+            <div class = "leftbox align-left">
+                <h3 class="title">
+                <span>准备</span><span class="mark">物品</span>
+                </h3>
+                <p>
+                    初来乍到，要准备什么东西呢？<br>
+                    建议随行李一起带到学校的：<br>
+                    夏秋装衣物 毛巾浴巾 枕头被子<br>
+                    建议到学校之后再购买的：<br>
+                    席子 床垫 水桶 盆子 衣架<br>
+                    <br>
+                    再列举一些会用到的日常用品：<br>
+                    水瓶杯子 牙膏牙刷 肥皂洗发水 洗衣粉/洗衣液 餐具<br>
+                    防晒霜 排插 吹风机 镜子梳子 常用药 粘钩 雨伞 拖鞋<br>
+                    还有一些学习用品：<br>
+                    词典工具书 笔 笔记本 文件夹 小台灯 U盘<br>
+                    为了方便起见可以先复印几份身份证和照几张证件照备用
+                </p>
+            </div>
+            <div class = "rightbox align-left">
+                <h3 class="title">
+                <br>
+                </h3>
+                <p>
+                    左边说的这些东西，其实在学校附近都能买的到<br>
+                    只是为了方便和节约起见，能带来的就尽量带来吧<br>
+                    报到的那天楼下会有摆摊卖东西的，但是会贵很多<br>
+                    如果不怕麻烦建议去去大信新都汇或者壹加壹买，其实也不是很远<br>
+                    好像北门对面开业不久的大信溢彩年华也开了超市<br>
+                    <br>
+                    刚入学的那段时间肯定会有不少人上门兜售物品<br>
+                    其中有不少都是很坑爹的，不仅贵而且质量差<br>
+                    不建议购买，就算想买也要看清楚考虑好再买
+                </p>
+            </div>
+        </section>
+
+        <section class = "even" id="section-6">
+            <div class = "leftbox">
+                <br>
+                <img src="images/baodao.gif">
+            </div>
+            <div class = "rightbox">
+                <h3 class="title">
+                <span>新生</span><span class="mark">报到</span>
+                </h3>
+                <p class = "align-left">
+                    报到手续资料如下<br>
+                    <span class = "smallp">
+                    1.录取通知书原件及其复印件一份<br>
+                    2.身份证原件及其复印件两份(A4纸复印身份证正反面)<br>
+                    3.纸质学生档案(由各市(县)招办统一寄出的除外)<br>
+                    4.党、团组织关系<br>
+                    5.户口是否随迁自愿选择，如选择随迁请办好《户口迁移证》<br>
+                    </span>
+                    <br>
+                    报到时间：9月13日，请不要提前，以免造成住宿上的不便。<br>
+                    报到地点：广东省中山市石岐区学院路一号电子科大中山学院1号教学楼、明德楼、实验大楼，届时有志愿者引导。<br>
+                    报到流程：见左图。
+                </p>                
+            </div>
+        </section>
+
+        <section class = "odd" id="section-7">
+            <div class = "QandA">
+                <h3 class = "mark">
+                    Q&A1<span class = "small">via:24</span>
+                </h3>
+            </div>
+            <div class = "column-text">
+                <p>
+                    <span class = "question">
+                        Q:如何缴纳费用？<br>
+                    </span>
+                    A:随录取通知书收到的银行卡是学校为新生在建行中山市兴中道支行开设的缴费专用银行卡(此卡的详细说明可登陆学校财务处主页查看)。信封内有银行卡初始密码，请及时到当地建行自助设备或柜台修改密码,并将第一年应缴纳的各项费用与2014年8月24日前存入该卡，学校将委托建行从8月25日起划扣应缴费用。学生在校期间所有缴费和退费均通过此卡进行。
+                    特别提示：开户行：建行中山市兴中道支行。电话0760-88388370，查询扣款情况电话95533。咨询电话：学校财务处0760-88313456   88335327<br><br>
+                    <span class = "question">
+                        Q:可以带电脑吗？宿舍可以接有线网吗？<br>
+                    </span>
+                    A:大一可以带电脑，不带也可以。宿舍能上网，如果不变应该还是中国电信的套餐。开学约一个月后才能上网，之前可以先用CMCC、ChinaNet、ChinaUnicom等Wifi。周日至周四晚上11:30断电断网，周五周六晚上12点断电、不断网。<br><br>
+                    <span class = "question">
+                        Q:有没有入学考试？<br>
+                    </span>
+                    A:13级没有入学考试。英语也没有按考试分班。仅供参考，14级具体情况还是要到时候才清楚。<br><br>
+                    <span class = "question">
+                        Q:需不需要办兵役证？<br>
+                    </span>
+                    A:兵役证是广东省规定需要的，但是呢，学校近些年都没有收取过。个人的建议是最好去办理，这个很容易办理的。（注、只涉及广东考生上广东的学院）<br><br>
+                    <span class = "question">
+                        Q:有什么奖学金？<br>
+                    </span>
+                    A:学院除国家奖学金、国家励志奖学金、国家助学金以外，还设有学院奖学金、冯汉柱奖学金、吴桂显奖学金、建设银行奖学金、利丰助学金、爱兰基金会助学金等奖助学金，奖学金最高额度为8000元/年。学院建档的家庭经济困难学生有资格申请各项助学金，学生须凭具有当地民政部门审核盖章的《学生及其家庭情况调查表》来校后交学院评议认定。<br><br>
+                </p>
+            </div>
+        </section> 
+            
+        <section class = "even" id="section-8">
+            <div class = "QandA">
+                <h3 class = "mark">Q&A2</h3>
+            </div>
+            <div class = "column-text">
+                <p>
+                    <span class = "smallp">
+                        *因制作者是软件工程的，所以顺便贴下关于计算机学院这边的问答<br>
+                    </span>
+                    <span class = "question">
+                        Q:我没有计算机基础会影响到学习吗？<br>
+                    </span>
+                    A:基本不用担心零基础会跟不上课程，学校的课程是根据零基础安排的。只要上课听讲加上适量练习不会落下的。<br><br>
+                    <span class = "question">
+                        Q:软件工程这个专业学什么？<br>
+                    </span>
+                    A:大概这么理解吧，每个软件，其实从对软件的策划（PM），到对软件的编写（RD），以及对软件的测试（QA），以及对整体的把控（QC），都是一整套体系，你们所学的，就是成为这个体系中的某一环的某一个敲电脑的。(via:24)<br><br>
+                    <span class = "question">
+                        Q:为什么我的录取专业显示为计算机科学与技术/软件工程？<br>
+                    </span>
+                    A:是这样的，大一的时候上的基本都是公共课程，以后会分成两个方向（计算机科学与技术->嵌入式技术及物联网 或 网络通信技术，软件工程->软件开发技术 或 数字媒体与游戏软件开发）。分方向的时间点最有可能的情况是在大一学期末，如果是这样，那么你有差不多一年的时间去考虑选择哪个方向。一般来说，细分方向都是自主选择的，但不排除因为报某个方向的人数超过限制的情况出现而导致辅导员介入调整，像我们13级就发生过这种情况。至于开学后怎样分班，目前也没有准确消息，最有可能的情况是按照平均原则，将软件和计科分别分为ABC三个班。<br><br>
+                    <span class = "question">
+                        Q:我想转出/转入该怎么办？<br>
+                    </span>
+                    A:1.录取后立即打电话给招生办，提出转院意愿，这个因为只是电话交流，成功率不是特别高。
+                    <br>
+                    2.报名当天直接找辅导员和院长提出，这个成功率一般，运气好的话可以直接转走。
+                    <br>
+                    3.上一段时间计算机以后再转，应该是在大一末提出。(via:24)<br><br>
+                </p>
+            </div>
+        </section> 
+
+        <section class = "odd" id="section-last">
+            <h3 class="title">
+                <span>想查看</span><span class="mark">学校实景</span><span>?</span><span class="small">（香山片区待更新）<span>
+            </h3>
+            <a class="link" href="photos/index.html">戳我<a>
+        </section>  
+    </div><!-- container -->
+    <script type="text/javascript">$(document).ready(function() {$('#nav').onePageNav();});</script>
+</body>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+        addPolyline();//向地图中添加线
+        addRemark();//向地图中添加文字标注
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.396356,22.533892);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.disableScrollWheelZoom();//禁用地图滚轮放大缩小，默认禁用(可不写)
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"南门",content:"报道可从此门入",point:"113.395485|22.530062",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"北门",content:"邻近龙腾宿舍区&nbsp;附近商铺较多",point:"113.399276|22.536688",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"东门",content:"邻近龙腾与香山宿舍区&nbsp;附近有一些商铺",point:"113.400524|22.534401",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"岐头门",content:"邻近岐头宿舍区",point:"113.395799|22.536821",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"西门（大概位置）",content:"很小的一个门",point:"113.392727|22.531989",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ,{title:"山顶足球场&篮球场",content:"山顶足球场和山顶篮球场",point:"113.396958|22.535303",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+//标注线数组
+    var plPoints = [{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["113.396904|22.536671","113.396635|22.537189"]}
+         ];
+    //向地图中添加线函数
+    function addPolyline(){
+        for(var i=0;i<plPoints.length;i++){
+            var json = plPoints[i];
+            var points = [];
+            for(var j=0;j<json.points.length;j++){
+                var p1 = json.points[j].split("|")[0];
+                var p2 = json.points[j].split("|")[1];
+                points.push(new BMap.Point(p1,p2));
+            }
+            var line = new BMap.Polyline(points,{strokeStyle:json.style,strokeWeight:json.weight,strokeColor:json.color,strokeOpacity:json.opacity});
+            map.addOverlay(line);
+        }
+    }
+//文字标注数组
+    var lbPoints = [{point:"113.393661|22.533208",content:"山底足球场"}
+         ,{point:"113.394416|22.534126",content:"体育馆&游泳池"}
+         ,{point:"113.398279|22.536145",content:"龙腾片区"}
+         ,{point:"113.398638|22.534543",content:"香山片区"}
+         ,{point:"113.397686|22.533608",content:"教学楼"}
+         ,{point:"113.398023|22.532131",content:"实验楼"}
+         ,{point:"113.396118|22.531297",content:"行政楼"}
+         ,{point:"113.395516|22.532907",content:"凤翔片区"}
+         ,{point:"113.396235|22.537823",content:"岐头片区"}
+         ,{point:"113.395377|22.530829",content:"1号教学楼（报到处）"}
+         ];
+    //向地图中添加文字标注函数
+    function addRemark(){
+        for(var i=0;i<lbPoints.length;i++){
+            var json = lbPoints[i];
+            var p1 = json.point.split("|")[0];
+            var p2 = json.point.split("|")[1];
+            var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+            map.addOverlay(label);
+            label.setStyle({borderColor:"#999"});
+        }
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</html>

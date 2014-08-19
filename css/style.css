@@ -1,12 +1,15 @@
 #nav > li > a, .link {
     color: #415166;
     text-decoration: none;
-    font-family: proxima_nova_rgregular,"microsoft yahei","lucida grande",tahoma,verdana,arial,sans-serif;
+    font-family: "microsoft yahei","lucida grande",tahoma,verdana,arial,sans-serif;
 }
 #nav > li > a:hover{
     color: #408CF3;
     padding-bottom: 5px;
     border-bottom: 3px solid #408CF3;
+}
+.link:hover {
+    color: #408CF3;
 }
 #nav > .current > a {
     color: #408CF3;
@@ -18,13 +21,14 @@
     padding-top: 20%;
     color: #3D444C;
     line-height: 1.8em;
-    font-family: ralewaythin,'microsoft yahei';
+    font-family: 'microsoft yahei';
     font-size: .64em;
 }
 h3 {
     display: block;
     font-size: 1.17em;
     font-weight: bold;
+    margin: 0;
 }
 .mark {
     color: #4688EB;
@@ -40,7 +44,7 @@ h3 {
     margin: 0;
     padding-top: 5%;
     line-height: 1em;
-    font-family: ralewaythin,'microsoft yahei';
+    font-family: 'microsoft yahei';
     font-size: .64em;
     display: inline-block;
 }
@@ -48,7 +52,7 @@ h3 {
     margin: 0;
     color: #fff;
     font-weight: bold;
-    text-shadow: 0px 1px 2px rgba(0,0,0,.3);
+    text-shadow: 0px 1px 3px rgba(0,0,0,.7);
 }
 .fullphoto-text {
     position: absolute;
@@ -63,7 +67,7 @@ p {
     font-size: .22em;
     color: #666;
     color: rgba(0,0,0,.6);
-    font-family: proxima_nova_rgregular,'microsoft yahei';
+    font-family: 'microsoft yahei';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -74,10 +78,50 @@ p {
     font-size: .22em;
     color: #fff;
     text-shadow: 0px 0px 5px rgba(0,0,0,.9);
-    font-family: proxima_nova_rgregular,'microsoft yahei';
+    font-family: 'microsoft yahei';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.link:hover {
+.smallp {
+    font-size: .8em;
+    line-height: .8em;
+}
+.align-left {
+    text-align: left;
+}
+.left-bottom {
+    margin: 85% auto 0 auto;
+    line-height: 1em;
+    font-family: 'microsoft yahei';
+    font-size: .64em;
+    display: inline-block;
+}
+#right {
+    margin-right: 0;
+    padding: 15% 0 0 0;
+    text-align: right; 
+}
+.QandA {
+    text-align: left;
+    padding: 5% 0 0 5%;
+    font-family: 'Courier'
+}
+.column-text {
+    -moz-column-count:3;
+    -webkit-column-count:3;
+    column-count:3;
+    -moz-column-gap:40px;
+    -webkit-column-gap:40px;
+    column-gap:40px;
+    -moz-column-rule:1px dashed rgba(0,0,0,.3);
+    -webkit-column-rule:1px dashed rgba(0,0,0,.3);
+    column-rule:1px dashed rgba(0,0,0,.3);
+    margin: 0 5%;
+    text-align: left;
+    font-size: 0.9em;
+    padding-bottom: 3%;
+}
+.question {
     color: #408CF3;
+    font-size: 1.2em;
 }

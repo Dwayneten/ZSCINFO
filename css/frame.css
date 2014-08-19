@@ -26,25 +26,12 @@ a:hover {
     overflow: hidden;
     text-align: center;
 }
-#nav > h1 {
-    background-image: url(../images/LOGO.gif);
-    position: absolute;
-    font-size: 1.2em;
-    width: 350px;
-    height: 50px;
-    display: block;
-    margin: 0 20px;
-    overflow: hidden;
-}
 #nav > li {
     display: inline-block;
     width: 5%;
+    min-width: 4em;
 }
 .container {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 0;
     height: 100%;
     font-weight: 400;
@@ -57,11 +44,8 @@ a:hover {
 .container > .even {
     background-color: #e5e7e9;
 }
-.container > .section {
-    display: block;
-    height: 100%;
-}
 section {
+    clear: both;
     min-height: 100%;
     position:relative;
 }
@@ -71,19 +55,13 @@ section {
     border: 10px solid #fff;
     box-shadow: 0 0px 10px rgba(0,0,0,.3);
 }
-.leftbox {
+.leftbox, .rightbox {
     margin: 0;
     padding: 0;
-    width: 48%;
+    width: 44%;
     float: left;
     min-height: 100%;
-}
-.rightbox {
-    margin: 0;
-    padding: 0;
-    width: 48%;
-    float: left;
-    min-height: 100%;
+    padding: 0 3%;
 }
 .leftbox img, .rightbox img {
     margin: 0;

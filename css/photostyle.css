@@ -1,0 +1,77 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    font-size: 1.5em;
+    color: #415166;
+    text-decoration: none;
+    font-family: proxima_nova_rgregular,"microsoft yahei","lucida grande",tahoma,verdana,arial,sans-serif;
+}
+a:hover {
+    color: #408CF3;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #408CF3;
+}
+#back_to_camera {
+    background-color: rgba(255,255,255,.8);
+    clear: both;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 65535;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.8em;
+}
+.fluid_container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#camera_wrap_4 {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin-bottom: 0!important;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.camera_bar {
+    z-index: 2;
+}
+.camera_thumbs {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.camera_thumbs_cont {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.camera_overlayer {
+    opacity: .05;
+}
+.nav_button {
+    display: inline-block;
+    width: 10%;
+    min-width: 4em;
+}
+.fadeFromBottom {
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Mingliu';
+}
