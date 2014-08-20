@@ -76,3 +76,10 @@ section {
     vertical-align: bottom;
     z-index: 0;
 }
+#name {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    line-height: 1em;
+    text-align: right;
+}

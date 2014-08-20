@@ -16,9 +16,22 @@
     padding-bottom: 5px;
     border-bottom: 3px solid #408CF3;
 }
+#name {
+    display: fixed;
+    position: fixed;
+    top: 13px;
+    right: 5px;
+    line-height: 1em;
+    color: #415166;
+    text-align: right;
+    font-family: 'Courier';
+    font-size: .5em;
+    opacity: .7;
+    z-index: 65536;
+}
 .title {
     margin: 0;
-    padding-top: 20%;
+    padding-top: 18%;
     color: #3D444C;
     line-height: 1.8em;
     font-family: 'microsoft yahei';
